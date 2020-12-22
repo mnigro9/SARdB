@@ -1,0 +1,17 @@
+Databases:
+   SAR: ./{uri}.wav
+   
+
+Protocols:
+   SAR:
+      SpeakerDiarization:
+         MixHeadset:
+           train:
+              annotation: ./trainSFX.rttm
+              annotated: ./trainSAR.uem
+           development:
+              annotation: ./validSFX.rttm
+              annotated: ./validSAR.uem
+           test:
+              annotation: ./testSFX.rttm
+              annotated: ./testSAR.uem
